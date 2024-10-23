@@ -9,7 +9,7 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { Testimonials } from '@/components/testimonials'
+import { FeaturedPosts } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
@@ -107,7 +107,7 @@ export default function Home() {
           <BentoSection />
         </div>
       </main>
-      <Testimonials />
+      <FeaturedPosts />
       <Footer />
     </div>
   )
