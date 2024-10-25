@@ -2,6 +2,7 @@ import { BackgroundGradientAnimation } from '@/components/background-gradient-an
 import { BentoCard } from '@/components/bento-card'
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
+import { FeaturedPosts } from '@/components/featured-posts'
 import { Footer } from '@/components/footer'
 import { GlowingStarsBackgroundCard } from '@/components/glowing-stars'
 import { Keyboard } from '@/components/keyboard'
@@ -9,13 +10,13 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { FeaturedPosts } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  title: 'Développeur Web Full Stack - Next.js, Node.js, Laravel',
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
 }
 
 function Hero() {
@@ -24,7 +25,7 @@ function Hero() {
       <BackgroundGradientAnimation />
       <Container className="relative">
         <Navbar />
-        <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
+        <div className="pb-28 pt-20 sm:pb-28 sm:pt-24 lg:pb-48 lg:pt-28">
           <h1 className="font-display text-balance text-5xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-7xl/[0.8] md:text-8xl/[0.8]">
             Build Every Solution.
           </h1>
@@ -33,7 +34,7 @@ function Hero() {
             Laravel to create scalable, high-performance applications.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Let’s Get Started</Button>
+            <Button href="#">Discover My Work</Button>
           </div>
         </div>
       </Container>
@@ -51,14 +52,14 @@ function BentoSection() {
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Professional Path"
-          title="Companies I've Contributed To"
+          eyebrow="Professional Journey"
+          title="Companies I've Worked With"
           description="Throughout my career, I’ve had the opportunity to work with amazing companies that helped shape my expertise in web development and technology. Each experience has contributed to my growth as a developer."
           graphic={<LogoCluster />}
           className="z-10 max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
-          eyebrow="Growth Mindset"
+          eyebrow="Learning Journey"
           title="Continuous Learning"
           description="Every step of my journey has been about expanding my skills and knowledge in the ever-evolving tech landscape."
           graphic={
@@ -69,7 +70,7 @@ function BentoSection() {
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Creative Process"
+          eyebrow="Passion for Coding"
           title="Code at the Core"
           description="Behind every keystroke lies a passion for building digital solutions. My love for coding is the driving force behind every project I undertake, where innovation and precision come together."
           graphic={
@@ -80,7 +81,7 @@ function BentoSection() {
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Tech Stack"
+          eyebrow="Development Tools"
           title="Tools of the Trade"
           description="A developer is only as strong as their tools. I work with a robust and versatile set of technologies to craft high-performance applications, from backend frameworks to frontend libraries."
           graphic={<LogoTimeline />}

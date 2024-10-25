@@ -1,29 +1,28 @@
 import { PlusGrid, PlusGridItem, PlusGridRow } from '@/components/plus-grid'
+import React from 'react'
 import { Button } from './button'
 import { Container } from './container'
-import { Gradient } from './gradient'
 import { Link } from './link'
-import { Logo } from './logo'
 import { Subheading } from './text'
 
 function CallToAction() {
   return (
     <div className="relative pb-16 pt-20 text-center sm:py-24">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>Let's Work Together</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Ready to bring your ideas to life?
           <br />
-          Start your free trial today.
+          Let's build something amazing.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Whether you have a project in mind or just want to chat, feel free to
+        reach out.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="#">
-          Get started
+          Contact Me
         </Button>
       </div>
     </div>
@@ -148,7 +147,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Riadh Benchouche. All Rights Reserved.
     </div>
   )
 }
@@ -156,23 +155,11 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative">
-        <div className="absolute inset-2 rounded-4xl bg-white/80" />
+      <div className="relative mx-auto">
+        <div className="absolute inset-2 rounded-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#d4eaff] from-[28%] via-[#a0c4ff] via-[70%] to-[#ffb6b9] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]" />
         <Container>
           <CallToAction />
           <PlusGrid className="pb-16">
-            <PlusGridRow>
-              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
-                <div className="col-span-2 flex">
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
-                  </PlusGridItem>
-                </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
-                  <Sitemap />
-                </div>
-              </div>
-            </PlusGridRow>
             <PlusGridRow className="flex justify-between">
               <div>
                 <PlusGridItem className="py-3">
@@ -187,7 +174,7 @@ export function Footer() {
             </PlusGridRow>
           </PlusGrid>
         </Container>
-      </Gradient>
+      </div>
     </footer>
   )
 }

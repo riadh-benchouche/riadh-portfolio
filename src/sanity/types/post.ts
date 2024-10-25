@@ -47,7 +47,7 @@ export const postType = defineType({
               groq`count(*[_type == 'post' && isFeatured == true])`,
             )
 
-          return featuredPosts > 3
+          return featuredPosts > 6
             ? 'Only 3 posts can be featured at a time.'
             : true
         }),

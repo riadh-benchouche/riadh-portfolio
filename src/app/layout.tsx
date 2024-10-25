@@ -4,8 +4,8 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Radiant',
-    default: 'Radiant - Close every deal',
+    template: '%s | Riadh Benchouche',
+    default: 'Riadh Benchouche | Développeur Web Full Stack - Next.js, Node.js, Laravel',
   },
 }
 
@@ -15,8 +15,9 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <head>
+        <title>Riadh Benchouche | Développeur Web Full Stack - Next.js, Node.js, Laravel</title>
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
@@ -28,7 +29,7 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body suppressHydrationWarning={true} className="text-gray-950 antialiased">{children}</body>
     </html>
   )
 }
