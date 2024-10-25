@@ -7,15 +7,16 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import {
   AcademicCapIcon,
   BriefcaseIcon,
-  CameraIcon,
+  GlobeAmericasIcon,
   LanguageIcon,
-  MusicalNoteIcon,
+  PaintBrushIcon,
 } from '@heroicons/react/16/solid'
 import { HeartIcon, SparklesIcon } from '@sanity/icons'
 import type { Metadata } from 'next'
 import Image, { type ImageProps } from 'next/image'
 import type { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react'
 
+import { Button } from '@/components/button'
 import {
   default as apnLogo,
   default as fstckLogo,
@@ -244,10 +245,6 @@ function Skills() {
       ],
     },
     {
-      skill: 'Base de données | Conception',
-      subSkills: ['Power BI', 'SQL', 'MariaDB', 'PostgreSQL', 'UML', 'SysML'],
-    },
-    {
       skill: 'Project Management',
       subSkills: ['Scrum', 'Kanban', 'Agile', 'GANTT', 'Trello'],
     },
@@ -289,16 +286,16 @@ function Hobbies() {
     hobbit: string
   }> = [
     {
-      Icon: MusicalNoteIcon,
-      hobbit: 'Violinist',
+      Icon: GlobeAmericasIcon,
+      hobbit: 'Travel Enthusiast',
     },
     {
       Icon: HeartIcon,
       hobbit: 'Health Enthusiast',
     },
     {
-      Icon: CameraIcon,
-      hobbit: 'Content Creator',
+      Icon: PaintBrushIcon,
+      hobbit: 'Art & Design',
     },
   ]
 
@@ -312,7 +309,7 @@ function Hobbies() {
               Hobbies
             </span>
           </h2>
-          <ol className="mt-6 grid grid-cols-3 items-center justify-items-center gap-y-4 pb-1">
+          <ol className="mt-6 grid grid-cols-3 items-center justify-items-center gap-y-4">
             {Hobbies.map((hobby, hobbyIndex) => (
               <li
                 className="col-span-1 flex w-full flex-col items-center justify-center text-center"
@@ -365,7 +362,7 @@ function AboutMe() {
                   <br />
                   As I continue to grow in this field, I aim to work on
                   impactful projects that solve real-world challenges and bring
-                  new ideas to life. When I'm not coding, I enjoy exploring the
+                  new ideas to life. When I&apos;m not coding, I enjoy exploring the
                   latest tech trends, collaborating with fellow developers, and
                   brainstorming on innovative solutions.
                 </p>
@@ -402,9 +399,7 @@ export default function About() {
       </Container>
       <Header />
       <AboutMe />
-      <Subheading className="text-center">
-        Resume and Expertise
-      </Subheading>
+      <Subheading className="text-center">Resume and Expertise</Subheading>
       <Heading as="div" className="mt-2 text-center">
         Discover My Journey and Expertise
       </Heading>
@@ -417,6 +412,13 @@ export default function About() {
         <div className="h-full space-y-6 md:order-2">
           <Skills />
           <Hobbies />
+          <Button
+            variant="secondary"
+            className="w-full bg-white"
+            href="/riadh-benchouche-resume.pdf"
+          >
+            Download Resume
+          </Button>
         </div>
       </div>
       <Footer />

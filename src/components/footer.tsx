@@ -9,11 +9,11 @@ function CallToAction() {
   return (
     <div className="relative pb-16 pt-20 text-center sm:py-24">
       <hgroup>
-        <Subheading>Let's Work Together</Subheading>
+        <Subheading>Let&apos;s Work Together</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           Ready to bring your ideas to life?
           <br />
-          Let's build something amazing.
+          Let&apos;s build something amazing.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">

@@ -4,7 +4,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
-import { Heading, Lead, Subheading } from '@/components/text'
+import { Heading, Lead } from '@/components/text'
 import { image } from '@/sanity/image'
 import {
   getCategories,
@@ -161,7 +161,7 @@ async function Posts({ page, category }: { page: number; category?: string }) {
 
   return (
     <div className="mt-6">
-      {posts.map((post) => (
+      {posts.map((post: any) => (
         <div
           key={post.slug}
           className="relative grid grid-cols-1 border-b border-b-gray-100 py-10 first:border-t first:border-t-gray-200 max-sm:gap-3 sm:grid-cols-3"
@@ -289,13 +289,13 @@ export default async function Blog({
       <GradientBackground />
       <Container>
         <Navbar />
-        <Subheading className="mt-16">Blog</Subheading>
-        <Heading as="h1" className="mt-2">
-          What’s happening at Radiant.
+        <Heading as="h1" className="mt-16">
+          What’s Happening on My Journey
         </Heading>
         <Lead className="mt-6 max-w-3xl">
-          Stay informed with product updates, company news, and insights on how
-          to sell smarter at your company.
+          Stay updated with my thoughts on web development, tech trends, and
+          personal projects. Explore product updates, insights into my coding
+          experiences, and tips on building smarter solutions.
         </Lead>
       </Container>
       {page === 1 && !category && <FeaturedPosts />}
