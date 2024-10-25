@@ -5,7 +5,7 @@ import React from 'react'
 export const metadata: Metadata = {
   title: {
     template: '%s | Riadh Benchouche',
-    default: 'Développeur Web Full Stack',
+    default: 'Fullstack Web Developer',
   },
   applicationName: 'Riadh Benchouche',
   authors: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     url: 'https://www.riadhbench.com',
     siteName: 'Riadh Benchouche',
-    title: 'Riadh Benchouche - Développeur Web Full Stack',
+    title: 'Riadh Benchouche - Fullstack Web Developer',
     description:
       'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
         url: 'https://www.riadhben.com/_next/image?url=%2Fprofile.jpeg&w=828&q=75',
         width: 600,
         height: 315,
-        alt: 'Riadh Benchouche - Développeur Web Full Stack',
+        alt: 'Riadh Benchouche - Fullstack Web Developer',
       },
     ],
   },
