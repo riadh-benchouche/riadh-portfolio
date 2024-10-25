@@ -3,8 +3,8 @@
 import { visionTool } from '@sanity/vision'
 import { defineConfig } from 'sanity'
 import { structureTool } from 'sanity/structure'
-import { apiVersion, dataset, projectId } from './src/sanity/env'
-import { schema } from './src/sanity/schema'
+import { apiVersion, dataset, projectId } from '@/sanity/env'
+import { schema } from '@/sanity/schema'
 
 export default defineConfig({
   basePath: '/admin',

@@ -26,9 +26,9 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 export const metadata: Metadata = {
-  title: 'Blog',
+  title: 'Personal Blog',
   description:
-    'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+    "Welcome to my personal blog! I'm Riadh Benchouche, a web developer sharing insights on technology, coding tips, and the latest trends in web development. Join me on this journey!",
 }
 
 const postsPerPage = 5

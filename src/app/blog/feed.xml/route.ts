@@ -7,12 +7,12 @@ export async function GET(req: Request) {
   let siteUrl = new URL(req.url).origin
 
   let feed = new Feed({
-    title: 'The Radiant Blog',
+    title: 'Riadh Benchouche Blog',
     description:
-      'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+    'Welcome to my personal blog! I\'m Riadh Benchouche, a web developer sharing insights on technology, coding tips, and the latest trends in web development. Join me on this journey!',
     author: {
-      name: 'Michael Foster',
-      email: 'michael.foster@example.com',
+      name: 'Riadh Benchouche',
+      email: 'r.benchouche1@gmail.com',
     },
     id: siteUrl,
     link: siteUrl,

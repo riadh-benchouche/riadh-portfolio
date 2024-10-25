@@ -14,7 +14,7 @@ import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Développeur Web Full Stack - Next.js, Node.js, Laravel',
+  title: 'Développeur Web Full Stack',
   description:
     'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
 }

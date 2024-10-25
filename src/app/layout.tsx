@@ -1,11 +1,38 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
-import React from "react";
+import React from 'react'
 
 export const metadata: Metadata = {
   title: {
     template: '%s | Riadh Benchouche',
-    default: 'Riadh Benchouche | Développeur Web Full Stack - Next.js, Node.js, Laravel',
+    default: 'Développeur Web Full Stack',
+  },
+  applicationName: 'Riadh Benchouche',
+  authors: [
+    {
+      name: 'Riadh Benchouche',
+      url: 'https://www.riadhbench.com',
+    },
+  ],
+  description:
+    'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
+  openGraph: {
+    url: 'https://www.riadhbench.com',
+    siteName: 'Riadh Benchouche',
+    title: 'Riadh Benchouche - Développeur Web Full Stack',
+    description:
+      'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
+    images: [
+      /*{
+                          url: 'https://www.ghaibsr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FportraitPhoto.360734cf.jpeg&w=1080&q=75',
+                          width: 600,
+                          height: 315,
+                          alt: 'Riadh Benchouche - Développeur Web Full Stack',
+                        }*/
+    ],
+  },
+  verification: {
+    // google: 'rF1p7hrWwW_kkswltukk9fUBQrOy2VQAx8P7X9htbwc',
   },
 }
 
@@ -17,7 +44,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
-        <title>Riadh Benchouche | Développeur Web Full Stack - Next.js, Node.js, Laravel</title>
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
@@ -25,11 +51,16 @@ export default function RootLayout({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="The Radiant Blog"
+          title="RSS Feed for Riadh Benchouche"
           href="/blog/feed.xml"
         />
       </head>
-      <body suppressHydrationWarning={true} className="text-gray-950 antialiased">{children}</body>
+      <body
+        suppressHydrationWarning={true}
+        className="text-gray-950 antialiased"
+      >
+        {children}
+      </body>
     </html>
   )
 }

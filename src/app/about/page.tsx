@@ -416,6 +416,7 @@ export default function About() {
             variant="secondary"
             className="w-full bg-white"
             href="/riadh-benchouche-resume.pdf"
+            target="_blank"
           >
             Download Resume
           </Button>
