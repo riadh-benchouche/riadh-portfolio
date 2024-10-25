@@ -17,22 +17,20 @@ import Image, { type ImageProps } from 'next/image'
 import type { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react'
 
 import { Button } from '@/components/button'
-import {
-  default as apnLogo,
-  default as fstckLogo,
-} from '@/images/logos/apn-logo.svg'
+import apnLogo from '@/images/logos/apn-logo.svg'
 import cesiLogo from '@/images/logos/cesi.svg'
 import esgiLogo from '@/images/logos/esgi-logo.svg'
 import franceFlag from '@/images/logos/france-flag.svg'
+import fstckLogo from '@/images/logos/fstck-logo.svg'
 import junoLogo from '@/images/logos/juno-logo.svg'
 import whitebayLogo from '@/images/logos/logo-whitebay.svg'
 import ufasLogo from '@/images/logos/ufas-logo.svg'
 import unitedKingdomFlag from '@/images/logos/united-kingdom-flag.svg'
 
 export const metadata: Metadata = {
-  title: '',
+  title: 'About Me',
   description:
-    'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+    'Building meaningful web experiences with a passion for innovation and scalability.',
 }
 
 function Header() {
@@ -362,9 +360,9 @@ function AboutMe() {
                   <br />
                   As I continue to grow in this field, I aim to work on
                   impactful projects that solve real-world challenges and bring
-                  new ideas to life. When I&apos;m not coding, I enjoy exploring the
-                  latest tech trends, collaborating with fellow developers, and
-                  brainstorming on innovative solutions.
+                  new ideas to life. When I&apos;m not coding, I enjoy exploring
+                  the latest tech trends, collaborating with fellow developers,
+                  and brainstorming on innovative solutions.
                 </p>
               </blockquote>
             </figure>

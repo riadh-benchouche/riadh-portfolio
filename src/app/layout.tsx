@@ -23,12 +23,12 @@ export const metadata: Metadata = {
     description:
       'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
     images: [
-      /*{
-                          url: 'https://www.ghaibsr.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FportraitPhoto.360734cf.jpeg&w=1080&q=75',
-                          width: 600,
-                          height: 315,
-                          alt: 'Riadh Benchouche - Développeur Web Full Stack',
-                        }*/
+      {
+        url: 'https://www.riadhben.com/_next/image?url=%2Fprofile.jpeg&w=828&q=75',
+        width: 600,
+        height: 315,
+        alt: 'Riadh Benchouche - Développeur Web Full Stack',
+      },
     ],
   },
   verification: {
