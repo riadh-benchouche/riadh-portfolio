@@ -31,15 +31,14 @@ const ChatBot = () => {
     <Popover className="relative">
       {({ close }) => (
         <>
-          <PopoverButton className="focus-visible:outline-secondary-600 fixed bottom-10 right-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+          <PopoverButton className="focus-visible:outline-secondary-600 fixed bottom-4 right-4 md:bottom-10 md:right-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
             <ChatBubbleLeftEllipsisIcon
               className="h-7 w-7"
               aria-hidden="true"
             />
           </PopoverButton>
-
-          <PopoverPanel className="fixed bottom-24 right-10 z-10 flex w-screen max-w-max pb-2">
-            <div className="w-full max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <PopoverPanel className="fixed bottom-16 md:bottom-24 right-4 md:right-10 z-10 flex w-full max-w-max pb-2">
+            <div className="w-80 md:w-full md:max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
               <div className="p-4">
                 <div className="flex items-start justify-between rounded-3xl bg-gray-100 px-4 py-2.5">
                   <div className="flex flex-col items-start">
@@ -47,7 +46,7 @@ const ChatBot = () => {
                       Need technical help?
                     </h3>
                     <p className="text-gray-500">
-                      I'm here to support you with your web development
+                      I&apos;m here to support you with your web development
                       questions
                     </p>
                   </div>
