@@ -1,3 +1,4 @@
+import ChatBot from '@/components/chat-bot'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 import React from 'react'
@@ -60,6 +61,7 @@ export default function RootLayout({
         className="text-gray-950 antialiased"
       >
         {children}
+        <ChatBot />
       </body>
     </html>
   )
