@@ -90,13 +90,17 @@ function Copyright() {
   )
 }
 
-export function Footer() {
+export function Footer({
+  showCallToAction = true,
+}: {
+  showCallToAction?: boolean
+}) {
   return (
     <footer>
       <div className="relative mx-auto">
         <div className="absolute inset-2 rounded-4xl bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#d4eaff] from-[28%] via-[#a0c4ff] via-[70%] to-[#ffb6b9] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]" />
         <Container>
-          <CallToAction />
+          {showCallToAction && <CallToAction />}
           <PlusGrid className="pb-16">
             <PlusGridRow className="flex justify-between">
               <div>
