@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Riadh Benchouche',
-      url: 'https://www.riadhbench.com',
+      url: 'https://www.riadhben.com',
     },
   ],
   description:
     'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
   openGraph: {
-    url: 'https://www.riadhbench.com',
+    url: 'https://www.riadhben.com',
     siteName: 'Riadh Benchouche',
     title: 'Riadh Benchouche - Fullstack Web Developer',
     description:

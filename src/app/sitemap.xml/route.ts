@@ -1,58 +1,44 @@
 import { getPostsForFeed } from '@/sanity/queries'
+
 let posts = await getPostsForFeed()
+
 function getSitemap() {
   const map = [
     {
-      url: 'https://riadhbench.com/',
+      url: 'https://riadhben.com',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
     },
     {
-      url: 'https://riadhbench.com/about',
+      url: 'https://riadhben.com/about',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 1,
     },
     {
-      url: 'https://riadhbench.com/projects',
+      url: 'https://riadhben.com/projects',
       lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
     },
     {
-      url: 'https://riadhbench.com/blog',
+      url: 'https://riadhben.com/blog',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
     },
     {
-      url: 'https://riadhbench.com/resume',
+      url: 'https://riadhben.com/resume',
       lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.8,
     },
     ...posts.map((post) => ({
-      url: `https://riadhbench.com/blog/${post.slug}`,
+      url: `https://riadhben.com/blog/${post.slug}`,
       // @ts-ignore
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      lastModified: new Date(post.publishedAt),
     })),
   ]
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${map
       .map(
         (item) => `
             <url>
               <loc>${item?.url}</loc>
               <lastmod>${item?.lastModified.toISOString()}</lastmod>
-              <changefreq>${item?.changeFrequency}</changefreq>
-              <priority>${item?.priority}</priority>
             </url>
           `,
       )
