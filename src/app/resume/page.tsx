@@ -1,5 +1,9 @@
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
+import {
+  Footer,
+  SocialIconGithub,
+  SocialIconLinkedIn,
+} from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { CardResume, type RoleType } from '@/components/resume-card'
@@ -7,16 +11,23 @@ import { Heading, Lead } from '@/components/text'
 import {
   AcademicCapIcon,
   BriefcaseIcon,
+  EnvelopeIcon,
   GlobeAmericasIcon,
   LanguageIcon,
   PaintBrushIcon,
+  PhoneIcon,
 } from '@heroicons/react/16/solid'
 import { HeartIcon, SparklesIcon } from '@sanity/icons'
 import type { Metadata } from 'next'
 import Image, { type ImageProps } from 'next/image'
-import type { ForwardRefExoticComponent, RefAttributes, SVGProps } from 'react'
+import {
+  type ForwardRefExoticComponent,
+  type RefAttributes,
+  type SVGProps,
+} from 'react'
 
 import { Button } from '@/components/button'
+import { Link } from '@/components/link'
 import apnLogo from '@/images/logos/apn-logo.svg'
 import cesiLogo from '@/images/logos/cesi.svg'
 import esgiLogo from '@/images/logos/esgi-logo.svg'
@@ -328,6 +339,62 @@ function Hobbies() {
   )
 }
 
+function HeaderInfo() {
+  return (
+    <div className="-m-2 mx-auto mb-6 mt-20 grid w-full max-w-7xl grid-cols-1 rounded-4xl px-2 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+      <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
+        <div className="flex flex-1 flex-col items-start justify-around space-y-6 rounded-3xl bg-white px-6 py-6 shadow-2xl ring-1 ring-black/5 md:flex-row md:items-center md:space-y-0 md:px-0">
+          <div className="flex flex-col">
+            <span className="bg-gradient-to-r from-[#456FE8] to-[#19B0EC] bg-clip-text text-4xl font-bold text-transparent">
+              Riadh Benchouche
+            </span>
+            <span className="text-lg text-gray-600">
+              Fullstack Web Developer
+            </span>
+          </div>
+          <div className="flex flex-col space-y-2">
+            <a
+              href="tel:+33761421437"
+              className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
+            >
+              <PhoneIcon className="mr-1 h-5 w-5" /> +33 7 61 42 14 37
+            </a>
+
+            <a
+              href="mailto:r.benchouche1@gmail.com"
+              className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
+            >
+              <EnvelopeIcon className="mr-1 h-5 w-5" /> r.benchouche1@gmail.com
+            </a>
+            <div className="text-sm text-gray-950 md:text-base">
+              Paris, France
+            </div>
+            <div className="flex items-center space-x-3 text-sm text-blue-500 md:text-base">
+              <Link
+                href="https://linkedin.com/in/riadh-benchouche"
+                target="_blank"
+                aria-label="Visit us on github"
+                className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+              >
+                <SocialIconLinkedIn className="size-5" />
+              </Link>
+
+              <Link
+                href="https://github.com/riadh-benchouche"
+                target="_blank"
+                aria-label="Visit us on github"
+                className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+              >
+                <SocialIconGithub className="size-5" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function About() {
   return (
     <main className="overflow-hidden">
@@ -336,7 +403,8 @@ export default function About() {
         <Navbar />
       </Container>
       <Header />
-      <div className="mx-auto my-20 grid w-full max-w-7xl grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-12">
+      <HeaderInfo />
+      <div className="mx-auto mb-20 grid w-full max-w-7xl grid-cols-1 gap-y-6 px-2 md:grid-cols-2 md:gap-x-12">
         <div className="h-full space-y-6 md:order-1">
           <Work />
           <Education />

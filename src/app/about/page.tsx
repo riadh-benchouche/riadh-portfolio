@@ -1,8 +1,9 @@
+import ContactForm from '@/components/contact-form'
 import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
-import { Heading, Lead } from '@/components/text'
+import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -26,7 +27,7 @@ function Header() {
 
 function AboutMe() {
   return (
-    <div className="w-auto lg:w-full max-w-7xl mx-2 lg:mx-auto my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pb-24 pt-36 lg:pt-36">
+    <div className="mx-2 my-24 w-auto max-w-7xl rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pb-24 pt-36 lg:mx-auto lg:w-full lg:pt-36">
       <Container>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-[200px_1fr_1fr]">
           <div className="flex flex-col max-lg:mt-16 lg:col-span-2">
@@ -90,7 +91,12 @@ export default function About() {
       </Container>
       <Header />
       <AboutMe />
-      <Footer />
+      <Subheading className="text-center">Get in Touch</Subheading>
+      <Heading as="div" className="mt-2 text-center">
+        Let&apos;s discuss your project.
+      </Heading>
+      <ContactForm />
+      <Footer showCallToAction={false} />
     </main>
   )
 }

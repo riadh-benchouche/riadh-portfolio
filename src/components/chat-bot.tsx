@@ -31,14 +31,14 @@ const ChatBot = () => {
     <Popover className="relative">
       {({ close }) => (
         <>
-          <PopoverButton className="focus-visible:outline-secondary-600 fixed bottom-4 right-4 md:bottom-10 md:right-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+          <PopoverButton className="focus-visible:outline-secondary-600 fixed bottom-8 right-8 z-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:bottom-10 md:right-10">
             <ChatBubbleLeftEllipsisIcon
               className="h-7 w-7"
               aria-hidden="true"
             />
           </PopoverButton>
-          <PopoverPanel className="fixed bottom-16 md:bottom-24 right-4 md:right-10 z-10 flex w-full max-w-max pb-2">
-            <div className="w-80 md:w-full md:max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+          <PopoverPanel className="fixed bottom-20 right-8 z-10 flex w-full max-w-max pb-2 md:bottom-24 md:right-10">
+            <div className="w-80 flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 md:w-full md:max-w-md">
               <div className="p-4">
                 <div className="flex items-start justify-between rounded-3xl bg-gray-100 px-4 py-2.5">
                   <div className="flex flex-col items-start">
@@ -72,6 +72,7 @@ const ChatBot = () => {
                           </div>
                           <div className="w-fit max-w-[300px] rounded-xl rounded-es-sm bg-gray-200 px-3 py-2">
                             <p className="text-sm font-medium text-gray-900">
+                              {questionLoading ? '...' : msg.content}
                               {msg.content}
                             </p>
                           </div>

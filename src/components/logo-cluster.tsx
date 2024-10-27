@@ -106,8 +106,8 @@ export function LogoCluster() {
         <Logo
           label="Who's next"
           src="/logo-cluster/logo-WSN.svg"
-          left={360}
-          top={144}
+          left={300}
+          top={130}
           hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
         />
         <Logo
@@ -134,7 +134,7 @@ export function LogoCluster() {
         <Logo
           label="Juno"
           src="/logo-cluster/juno-logo.svg"
-          left={36}
+          left={45}
           top={56}
           hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
         />
