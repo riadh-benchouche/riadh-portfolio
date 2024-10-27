@@ -23,7 +23,7 @@ function CallToAction() {
       <div className="mt-6">
         <Button
           className="w-full sm:w-auto"
-          href="mailto:r.benchouche1@gmail.com"
+          href="mailto:contact@riadhben.com"
         >
           Contact Me
         </Button>

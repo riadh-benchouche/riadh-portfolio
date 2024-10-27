@@ -361,10 +361,10 @@ function HeaderInfo() {
             </a>
 
             <a
-              href="mailto:r.benchouche1@gmail.com"
+              href="mailto:contact@riadhben.com"
               className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
             >
-              <EnvelopeIcon className="mr-1 h-5 w-5" /> r.benchouche1@gmail.com
+              <EnvelopeIcon className="mr-1 h-5 w-5" /> contact@riadhben.com
             </a>
             <div className="text-sm text-gray-950 md:text-base">
               Paris, France

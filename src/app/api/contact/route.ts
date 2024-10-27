@@ -34,14 +34,14 @@ export async function POST(req: Request): Promise<Response> {
 
   await sgMail.send({
     to: 'r.benchouche1@gmail.com',
-    from: 'r.benchouche1@gmail.com',
+    from: 'contact@riadhben.com',
     subject: 'New contact form submission',
     html: htmlContent,
   })
 
   await sgMail.send({
     to: email,
-    from: 'r.benchouche1@gmail.com',
+    from: 'contact@riadhben.com',
     subject: 'Thank you for your message!',
     html: htmlContentConfirmation,
   })

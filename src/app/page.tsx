@@ -34,7 +34,7 @@ function Hero() {
             Laravel to create scalable, high-performance applications.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Discover My Work</Button>
+            <Button href="/projects">Discover My Work</Button>
           </div>
         </div>
       </Container>
