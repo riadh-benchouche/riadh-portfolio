@@ -31,7 +31,10 @@ const ChatBot = () => {
     <Popover className="relative">
       {({ close }) => (
         <>
-          <PopoverButton className="focus-visible:outline-secondary-600 fixed bottom-8 right-8 z-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:bottom-10 md:right-10">
+          <PopoverButton
+              aria-label="Open chat"
+              title="Open chat"
+              className="focus-visible:outline-secondary-600 fixed bottom-8 right-8 z-10 rounded-full bg-[#6922C5] p-2.5 text-white shadow-sm hover:bg-[#6A5ACD] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 md:bottom-10 md:right-10">
             <ChatBubbleLeftEllipsisIcon
               className="h-7 w-7"
               aria-hidden="true"
