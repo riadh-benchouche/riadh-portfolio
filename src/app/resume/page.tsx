@@ -341,52 +341,54 @@ function Hobbies() {
 
 function HeaderInfo() {
   return (
-    <div className="-m-2 mx-auto mb-6 mt-20 grid w-full max-w-7xl grid-cols-1 rounded-4xl px-2 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
-      <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
-        <div className="flex flex-1 flex-col items-start justify-around space-y-6 rounded-3xl bg-white px-6 py-6 shadow-2xl ring-1 ring-black/5 md:flex-row md:items-center md:space-y-0 md:px-0">
-          <div className="flex flex-col">
-            <span className="bg-gradient-to-r from-[#456FE8] to-[#19B0EC] bg-clip-text text-4xl font-bold text-transparent">
-              Riadh Benchouche
-            </span>
-            <span className="text-lg text-gray-600">
-              Fullstack Web Developer
-            </span>
-          </div>
-          <div className="flex flex-col space-y-2">
-            <a
-              href="tel:+33761421437"
-              className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
-            >
-              <PhoneIcon className="mr-1 h-5 w-5" /> +33 7 61 42 14 37
-            </a>
-
-            <a
-              href="mailto:contact@riadhben.com"
-              className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
-            >
-              <EnvelopeIcon className="mr-1 h-5 w-5" /> contact@riadhben.com
-            </a>
-            <div className="text-sm text-gray-950 md:text-base">
-              Paris, France
+    <div className="mx-auto mb-6 mt-20 w-full max-w-7xl px-4 md:px-0">
+      <div className="-m-2 mx-auto mb-6 mt-20 grid w-full grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5">
+        <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
+          <div className="flex flex-1 flex-col items-start justify-around space-y-6 rounded-3xl bg-white px-6 py-6 shadow-2xl ring-1 ring-black/5 md:flex-row md:items-center md:space-y-0 md:px-0">
+            <div className="flex flex-col">
+              <span className="bg-gradient-to-r from-[#456FE8] to-[#19B0EC] bg-clip-text text-4xl font-bold text-transparent">
+                Riadh Benchouche
+              </span>
+              <span className="text-lg text-gray-600">
+                Fullstack Web Developer
+              </span>
             </div>
-            <div className="flex items-center space-x-3 text-sm text-blue-500 md:text-base">
-              <Link
-                href="https://linkedin.com/in/riadh-benchouche"
-                target="_blank"
-                aria-label="Visit us on github"
-                className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+            <div className="flex flex-col space-y-2">
+              <a
+                href="tel:+33761421437"
+                className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
               >
-                <SocialIconLinkedIn className="size-5" />
-              </Link>
+                <PhoneIcon className="mr-1 h-5 w-5" /> +33 7 61 42 14 37
+              </a>
 
-              <Link
-                href="https://github.com/riadh-benchouche"
-                target="_blank"
-                aria-label="Visit us on github"
-                className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+              <a
+                href="mailto:contact@riadhben.com"
+                className="flex items-center text-sm text-gray-950 hover:text-gray-950/75 md:text-base"
               >
-                <SocialIconGithub className="size-5" />
-              </Link>
+                <EnvelopeIcon className="mr-1 h-5 w-5" /> contact@riadhben.com
+              </a>
+              <div className="text-sm text-gray-950 md:text-base">
+                Paris, France
+              </div>
+              <div className="flex items-center space-x-3 text-sm text-blue-500 md:text-base">
+                <Link
+                  href="https://linkedin.com/in/riadh-benchouche"
+                  target="_blank"
+                  aria-label="Visit us on github"
+                  className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+                >
+                  <SocialIconLinkedIn className="size-5" />
+                </Link>
+
+                <Link
+                  href="https://github.com/riadh-benchouche"
+                  target="_blank"
+                  aria-label="Visit us on github"
+                  className="flex items-center gap-x-2 text-gray-950 data-[hover]:text-gray-950/75"
+                >
+                  <SocialIconGithub className="size-5" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
