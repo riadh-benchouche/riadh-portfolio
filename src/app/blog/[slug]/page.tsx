@@ -1,6 +1,6 @@
 import { Button } from '@/components/button'
 import { Container } from '@/components/container'
-import { Footer } from '@/components/footer'
+import { Footer, SocialIconLinkedIn, SocialIconX } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
@@ -49,6 +49,9 @@ export default async function BlogPost({
   params: { slug: string }
 }) {
   let post = (await getPost(params.slug)) || notFound()
+  const shareUrl = encodeURIComponent(
+    `https://www.riadhben.com/blog/${params.slug}`,
+  )
 
   return (
     <main className="overflow-hidden">
@@ -90,6 +93,28 @@ export default async function BlogPost({
                 ))}
               </div>
             )}
+            <ul className="flex gap-2 text-gray-700">
+              <li className="rounded-md border border-gray-300 p-1">
+                <Link
+                  href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}`}
+                  target="_blank"
+                  aria-label="Share on LinkedIn"
+                  className="text-gray-400 data-[hover]:text-gray-600"
+                >
+                  <SocialIconLinkedIn className="size-5" />
+                </Link>
+              </li>
+              <li className="rounded-md border border-gray-300 p-1">
+                <Link
+                  href={`https://twitter.com/intent/tweet?text=${post.title}&url=${shareUrl}`}
+                  target="_blank"
+                  aria-label="Share on X"
+                  className="text-gray-400 data-[hover]:text-gray-600"
+                >
+                  <SocialIconX className="size-5" />
+                </Link>
+              </li>
+            </ul>
           </div>
           <div className="text-gray-700">
             <div className="max-w-2xl xl:mx-auto">
