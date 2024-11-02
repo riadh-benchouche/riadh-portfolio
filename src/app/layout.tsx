@@ -15,6 +15,7 @@ export const metadata: Metadata = {
       url: 'https://www.riadhben.com',
     },
   ],
+  robots: 'follow, index',
   description:
     'Full Stack web developer specializing in Next.js, Node.js, and Laravel. I create high-performance, scalable applications. Discover my expertise in development to turn your ideas into robust solutions.',
   openGraph: {
@@ -42,6 +43,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning={true}>
       <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
         <link
           rel="icon"
           type="image/png"
