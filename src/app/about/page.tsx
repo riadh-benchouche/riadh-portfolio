@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'About Me',
   description:
     'Building meaningful web experiences with a passion for innovation and scalability.',
+  alternates: {
+    canonical: 'https://riadhben.com/about',
+  },
 }
 
 function Header() {

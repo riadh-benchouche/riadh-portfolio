@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   title: 'Personal Blog',
   description:
     "Welcome to my personal blog! I'm Riadh Benchouche, a web developer sharing insights on technology, coding tips, and the latest trends in web development. Join me on this journey!",
+  alternates: {
+    canonical: 'https://riadhben.com/blog',
+  },
 }
 
 const postsPerPage = 5

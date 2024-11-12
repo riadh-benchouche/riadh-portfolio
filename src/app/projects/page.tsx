@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'Projects',
   description:
     'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+  alternates: {
+    canonical: 'https://riadhben.com/projects',
+  },
 }
 
 function Header() {
@@ -18,8 +21,8 @@ function Header() {
       <Heading as="h1">Projects Showcase</Heading>
       <Lead className="mt-6 max-w-3xl">
         Explore my personal and professional projects that showcase my journey
-        in web development. Each project reflects my commitment to creating impactful
-        solutions.
+        in web development. Each project reflects my commitment to creating
+        impactful solutions.
       </Lead>
     </Container>
   )

@@ -42,6 +42,24 @@ export const metadata: Metadata = {
   title: 'Resume and Expertise',
   description:
     'Discover my resume, journey and expertise in web development, design, and project management.',
+  alternates: {
+    canonical: 'https://riadhben.com/resume',
+  },
+  openGraph: {
+    url: 'https://www.riadhben.com/resume',
+    siteName: 'Riadh Benchouche',
+    title: 'Resume and Expertise',
+    description:
+      'Discover my resume, journey and expertise in web development, design, and project management.',
+    images: [
+      {
+        url: 'https://www.riadhben.com/_next/image?url=%2Fprofile.jpeg&w=828&q=75',
+        width: 600,
+        height: 315,
+        alt: 'Riadh Benchouche - Fullstack Web Developer',
+      },
+    ],
+  }
 }
 
 function Header() {

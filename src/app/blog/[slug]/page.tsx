@@ -24,6 +24,9 @@ export async function generateMetadata({
     ? {
         title: post.title,
         description: post.excerpt,
+        alternates: {
+            canonical: `https://riadhben.com/blog/${params.slug}`,
+        },
         openGraph: {
           authors: 'Riadh Benchouche',
           title: post.title || '',

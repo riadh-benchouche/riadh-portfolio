@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     default: 'Fullstack Web Developer',
   },
   applicationName: 'Riadh Benchouche',
+  alternates: {
+    canonical: 'https://riadhben.com',
+  },
   authors: [
     {
       name: 'Riadh Benchouche',
